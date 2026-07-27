@@ -19,19 +19,6 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 ---
 
-## Table of Contents
-
-- [Skills](#skills)
-- [Agents / Subagents](#agents--subagents)
-- [Frameworks & SDKs](#frameworks--sdks)
-- [MCP Servers & Integrations](#mcp-servers--integrations)
-- [Tools & CLIs](#tools--clis)
-- [Observability & Monitoring](#observability--monitoring)
-- [Security](#security)
-- [Documentation & Learning](#documentation--learning)
-
----
-
 ## Skills
 
 <!-- Reusable skills for Claude Code / agents (SKILL.md, packaged prompts, etc.) -->
@@ -79,3 +66,10 @@ _No entries yet._
 <!-- Articles, guides, prompt collections, cheatsheets -->
 
 _No entries yet._
+
+## Tokens Saving
+
+<!-- Tools/techniques focused on reducing token usage/cost in agent workflows -->
+
+- **[rtk](https://github.com/rtk-ai/rtk)** by [rtk-ai](https://github.com/rtk-ai) — 🧪 `pending test`
+  A single-binary Rust CLI proxy that filters and compresses verbose shell command output (git, cargo, test runners, etc.) before it reaches an AI agent's context, cutting token usage by 60-90%. Supports 15+ AI coding platforms including Claude Code, GitHub Copilot, and Cursor.
