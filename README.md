@@ -1,81 +1,81 @@
-# 🧰 Skills, Agentes & Ferramentas para Dev com IA
+# 🧰 Skills, Agents & Tools for AI-Assisted Dev
 
-Coleção pessoal de referências — skills, agentes, frameworks, MCP servers e ferramentas — úteis para o trabalho de desenvolvimento de software com agentes de IA (Claude Code e afins).
+Personal curated list — skills, agents, frameworks, MCP servers and tools — useful for software development work with AI agents (Claude Code and similar).
 
-Inspirado em [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code).
+Inspired by [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code).
 
-## Como funciona
+## How it works
 
-Cada recurso listado abaixo tem uma etiqueta de status:
+Each resource listed below has a status label:
 
-| Etiqueta | Significado |
+| Label | Meaning |
 |---|---|
-| 🧪 `pending test` | Encontrado/adicionado, ainda não testado a fundo |
-| ✅ `approved` | Testado e aprovado para uso |
+| 🧪 `pending test` | Found/added, not yet tested |
+| ✅ `approved` | Tested and approved for use |
 
-Recursos testados e **rejeitados** não ficam aqui — vão para [`REJECTED.md`](./REJECTED.md), junto com o motivo da rejeição, para não serem reavaliados à toa no futuro.
+Resources that were tested and **rejected** don't stay here — they move to [`REJECTED.md`](./REJECTED.md), along with the reason for rejection, so they aren't re-evaluated pointlessly in the future.
 
-Ver [`CLAUDE.md`](./CLAUDE.md) para o fluxo de como novas entradas são adicionadas/promovidas/rejeitadas, e [`templates/entry.md`](./templates/entry.md) para o template de entrada.
+See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promoted/rejected, and [`templates/entry.md`](./templates/entry.md) for the entry template.
 
 ---
 
-## Índice
+## Table of Contents
 
 - [Skills](#skills)
-- [Agentes / Subagentes](#agentes--subagentes)
+- [Agents / Subagents](#agents--subagents)
 - [Frameworks & SDKs](#frameworks--sdks)
-- [MCP Servers & Integrações](#mcp-servers--integrações)
-- [Ferramentas & CLIs](#ferramentas--clis)
-- [Observabilidade & Monitoramento](#observabilidade--monitoramento)
-- [Segurança](#segurança)
-- [Documentação & Aprendizado](#documentação--aprendizado)
+- [MCP Servers & Integrations](#mcp-servers--integrations)
+- [Tools & CLIs](#tools--clis)
+- [Observability & Monitoring](#observability--monitoring)
+- [Security](#security)
+- [Documentation & Learning](#documentation--learning)
 
 ---
 
 ## Skills
 
-<!-- Skills reutilizáveis para Claude Code / agentes (SKILL.md, prompts empacotados, etc.) -->
+<!-- Reusable skills for Claude Code / agents (SKILL.md, packaged prompts, etc.) -->
 
-_Nenhuma entrada ainda._
+_No entries yet._
 
-## Agentes / Subagentes
+## Agents / Subagents
 
-<!-- Definições de subagentes, agentes especializados, agent packs -->
+<!-- Subagent definitions, specialized agents, agent packs -->
 
-_Nenhuma entrada ainda._
+_No entries yet._
 
 ## Frameworks & SDKs
 
-<!-- Frameworks de orquestração multi-agente, SDKs para construir agentes -->
+<!-- Multi-agent orchestration frameworks, SDKs for building agents -->
 
-_Nenhuma entrada ainda._
+_No entries yet._
 
-## MCP Servers & Integrações
+## MCP Servers & Integrations
 
-<!-- Servidores MCP, conectores, integrações com ferramentas externas -->
+<!-- MCP servers, connectors, integrations with external tools -->
 
-_Nenhuma entrada ainda._
+_No entries yet._
 
-## Ferramentas & CLIs
+## Tools & CLIs
 
-<!-- CLIs, utilitários de produtividade, geradores, linters específicos para workflows com agentes -->
+<!-- CLIs, productivity utilities, generators, linters specific to agent workflows -->
 
-_Nenhuma entrada ainda._
+_No entries yet._
 
-## Observabilidade & Monitoramento
+## Observability & Monitoring
 
-<!-- Dashboards de uso/custo, monitores de sessão, logging -->
+<!-- Usage/cost dashboards, session monitors, logging -->
 
-_Nenhuma entrada ainda._
+_No entries yet._
 
-## Segurança
+## Security
 
-<!-- Ferramentas de security review, sandboxing, permissões -->
+<!-- Security review tools, sandboxing, permissions -->
 
-_Nenhuma entrada ainda._
+_No entries yet._
 
-## Documentação & Aprendizado
+## Documentation & Learning
 
-<!-- Artigos, guias, coleções de prompts, cheatsheets -->
+<!-- Articles, guides, prompt collections, cheatsheets -->
 
-_Nenhuma entrada ainda._
+_No entries yet._

@@ -1,42 +1,50 @@
 ---
 name: curate-resource
-description: Adiciona, aprova ou rejeita um recurso (skill, agente, framework, ferramenta) na lista curada deste repositório. Use quando o usuário mandar um link de um repo/ferramenta novo para adicionar, disser que testou e aprovou um recurso já listado, ou disser que um recurso foi rejeitado/não presta.
+description: Adds, approves, or rejects a resource (skill, agent, framework, tool) in this repository's curated list. Use when the user gives a link to a new repo/tool to add, says they tested and approved a resource already listed, or says a resource was rejected/isn't good.
 ---
 
 # Curate Resource
 
-Mantém `README.md` e `REJECTED.md` deste repositório atualizados seguindo o fluxo descrito em `CLAUDE.md`.
+Keeps `README.md` and `REJECTED.md` in this repository up to date, following the flow described in `CLAUDE.md`. All content produced (README text, PR title/body, commit messages) must be in English, unless the user explicitly asks for another language.
 
-## Quando usar
+## When to use
 
-- Usuário manda uma URL de repositório/ferramenta nova → **adicionar**.
-- Usuário diz "testei o X e aprovei" / "pode marcar como aprovado" → **aprovar**.
-- Usuário diz "o X não presta" / "rejeitei o X" / "remove o X" → **rejeitar**.
+- User sends a URL of a new repository/tool → **add**.
+- User says "I tested X and approved it" / "mark X as approved" → **approve**.
+- User says "X isn't good" / "I rejected X" / "remove X" → **reject**.
 
-## Passo a passo
+## Step by step
 
-### 1. Adicionar novo recurso
+### 1. Add a new resource
 
-1. Confira se o link já existe em `README.md` ou `REJECTED.md` (busque pela URL). Se já existir, avise o usuário em vez de duplicar.
-2. Busque o conteúdo do link (WebFetch no README do repo, ou na página) para entender: o que faz, para que serve, autor/org.
-3. Escolha a seção do `README.md` mais adequada (ver `CLAUDE.md` para a lista de seções). Crie uma nova seção só se nenhuma existente servir.
-4. Insira a entrada em ordem alfabética na seção, seguindo `templates/entry.md`, com a etiqueta `🧪 \`pending test\``. Remova o placeholder `_Nenhuma entrada ainda._` se for a primeira entrada.
-5. Confirme ao usuário em qual seção a entrada foi adicionada e com um resumo de 1 linha do que é o recurso.
+1. Check whether the link already exists in `README.md` or `REJECTED.md` (search by URL). If it already exists, tell the user instead of duplicating it.
+2. If the user didn't specify the category in the same message, **ask** which category to use before proceeding. Never guess or invent a category — categories are only created when the user explicitly names one.
+3. Fetch the link's content (WebFetch on the repo README, or the page) to understand: what it does, what it's for, author/org.
+4. Insert the entry alphabetically in the chosen section, following `templates/entry.md`, with the `🧪 \`pending test\`` label. Remove the `_No entries yet._` placeholder if it's the first entry.
+5. Commit and push automatically, opening a PR for approval (or pushing to the existing open PR branch — see step 4 below). Confirm to the user which section the entry was added to, with a 1-line summary of what the resource is.
 
-### 2. Aprovar recurso existente
+### 2. Approve an existing resource
 
-1. Localize a entrada no `README.md` (por nome ou link).
-2. Troque `🧪 \`pending test\`` por `✅ \`approved\``.
-3. Se o usuário der contexto de uso ("funcionou bem para X"), incorpore como uma nota curta na descrição.
+1. Find the entry in `README.md` (by name or link).
+2. Swap `🧪 \`pending test\`` for `✅ \`approved\``.
+3. If the user gives usage context ("worked well for X"), fold it into the description as a short note.
+4. Commit and push automatically to a PR for approval.
 
-### 3. Rejeitar recurso existente
+### 3. Reject an existing resource
 
-1. Localize a entrada no `README.md`.
-2. Remova-a do `README.md`.
-3. Adicione ao `REJECTED.md`, no formato do template, com a data de hoje e o motivo. Se o usuário não deu motivo, pergunte antes de registrar (um motivo genérico não ajuda a decisão futura).
+1. Find the entry in `README.md`.
+2. Remove it from `README.md`.
+3. Add it to `REJECTED.md`, following the template, with today's date and the reason. If the user didn't give a reason, ask before recording one — a generic reason doesn't help future decisions.
+4. Commit and push automatically to a PR for approval.
 
-## Regras
+### 4. Git / PR conventions
 
-- Nunca commitar/pushar automaticamente a não ser que o usuário peça ou o fluxo da sessão já exija isso — edite os arquivos e reporte o que mudou.
-- Manter ordem alfabética dentro de cada seção.
-- Descrições objetivas, sem marketing, 1–2 frases.
+- Always commit and push automatically — never leave the change uncommitted waiting for an explicit push request.
+- If there's already an open PR covering this branch, push additional commits to it rather than opening a new one.
+- Keep the PR description minimal: `"Added <repo> to <Category>"`, `"Approved <repo>"`, `"Rejected <repo>"`. Use bullet points only if there's more than one highlight to report.
+
+## Rules
+
+- Keep alphabetical order within each section.
+- Objective descriptions, no marketing tone, 1–2 sentences.
+- Everything written in English by default.

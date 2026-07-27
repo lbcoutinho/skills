@@ -1,29 +1,30 @@
-# Template de Entrada
+# Entry Template
 
-Copie o bloco abaixo para a seção correta do `README.md`, substituindo os campos entre `< >`.
-
-```markdown
-- **[<Nome do Recurso>](<url-do-repo-ou-site>)** by [<Autor/Org>](<url-do-autor>) — 🧪 `pending test`
-  <Descrição curta em 1–2 frases: o que faz, por que é interessante, o que o diferencia.>
-```
-
-Depois de testado, atualize a etiqueta de status:
+Copy the block below into the right section of `README.md`, replacing the `< >` fields.
 
 ```markdown
-- **[<Nome do Recurso>](<url>)** by [<Autor>](<url-autor>) — ✅ `approved`
-  <Descrição, agora podendo incluir uma nota curta de "por que aprovado" / como usar.>
+- **[<Resource Name>](<repo-or-site-url>)** by [<Author/Org>](<author-url>) — 🧪 `pending test`
+  <Short 1–2 sentence description: what it does, why it's interesting, what sets it apart.>
 ```
 
-Se o recurso for rejeitado, **remova** a entrada do `README.md` e adicione ao `REJECTED.md` neste formato:
+Once tested, update the status label:
 
 ```markdown
-- **[<Nome do Recurso>](<url>)** — rejeitado em <YYYY-MM-DD>
-  Motivo: <motivo objetivo da rejeição>.
+- **[<Resource Name>](<url>)** by [<Author>](<author-url>) — ✅ `approved`
+  <Description, now optionally including a short "why approved" / usage note.>
 ```
 
-## Convenções
+If the resource is rejected, **remove** the entry from `README.md` and add it to `REJECTED.md` in this format:
 
-- Ordenar entradas alfabeticamente dentro de cada seção.
-- Descrição objetiva, sem marketing — o que o recurso faz de fato.
-- Se o recurso servir mais de uma categoria, colocar na mais específica e, se fizer muito sentido, referenciar (link relativo) nas outras.
-- Categoria não existe ainda? Criar uma nova seção no `README.md` (e no índice) em vez de forçar em uma existente.
+```markdown
+- **[<Resource Name>](<url>)** — rejected on <YYYY-MM-DD>
+  Reason: <objective reason for rejection>.
+```
+
+## Conventions
+
+- All content in this repo is written in English, unless explicitly requested otherwise.
+- Sort entries alphabetically within each section.
+- Objective description, no marketing language — what the resource actually does.
+- If a resource fits more than one category, place it in the most specific one and, if it makes sense, reference it (relative link) from the others.
+- Category doesn't exist yet? The user indicates when a new category should be created and its name — don't invent categories on your own.

@@ -1,32 +1,52 @@
-# Instruções para agentes trabalhando neste repositório
+# Instructions for agents working in this repository
 
-Este repositório é uma lista curada pessoal de **skills, agentes, frameworks e ferramentas** para desenvolvimento de software com agentes de IA (Claude Code e afins), no estilo de [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code).
+This repository is a personal curated list of **skills, agents, frameworks and tools** for software development with AI agents (Claude Code and similar), in the style of [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code).
 
-Arquivos principais:
-- `README.md` — lista principal, organizada por categoria.
-- `REJECTED.md` — recursos já avaliados e descartados (com motivo).
-- `templates/entry.md` — template e convenções de formatação de entrada.
+Main files:
+- `README.md` — main list, organized by category.
+- `REJECTED.md` — resources already evaluated and discarded (with reason).
+- `templates/entry.md` — entry template and formatting conventions.
 
-## Fluxo de curadoria
+## Language
 
-Quando o usuário mandar um link de um repositório/ferramenta novo:
+Everything generated in this repo — README, REJECTED.md, templates, PR titles and descriptions, commit messages, skill files — must be written in **English**, unless the user explicitly asks for another language for that specific output.
 
-1. **Pesquise o recurso** (README do repo, descrição, exemplos) para entender o que ele faz.
-2. **Escolha a seção** mais adequada no `README.md` (Skills, Agentes/Subagentes, Frameworks & SDKs, MCP Servers & Integrações, Ferramentas & CLIs, Observabilidade & Monitoramento, Segurança, Documentação & Aprendizado). Se nenhuma servir bem, crie uma nova seção (adicione também no índice).
-3. **Adicione a entrada** seguindo o template de `templates/entry.md`, com a etiqueta `🧪 pending test`. Insira em ordem alfabética dentro da seção. Remova a linha `_Nenhuma entrada ainda._` se for a primeira entrada da seção.
-4. Se o usuário não pedir para commitar/pushar, apenas edite os arquivos localmente e avise que a entrada foi adicionada — não faça commit automaticamente a menos que seja instruído ou que o fluxo de trabalho da sessão já preveja isso.
+## Categories
 
-Quando o usuário disser que um recurso foi **testado e aprovado**:
-- Troque a etiqueta `🧪 pending test` por `✅ approved` na entrada correspondente no `README.md`.
-- Opcionalmente, enriqueça a descrição com uma nota de uso real.
+Categories are **not** created automatically. The user tells you explicitly when a new category should exist and what its name is. Never invent or add a new section on your own judgment — if no existing category fits, ask the user.
 
-Quando o usuário disser que um recurso foi **rejeitado**:
-- Remova a entrada do `README.md`.
-- Adicione ao `REJECTED.md` no formato do template, com a data e o motivo da rejeição (peça o motivo se o usuário não tiver dado um).
+## Curation workflow
 
-## Convenções gerais
+When the user gives you a link to a new repository/tool to add:
 
-- Entradas em ordem alfabética dentro de cada seção.
-- Descrições objetivas e curtas (1–2 frases), sem tom de marketing.
-- Nunca duplicar um recurso já presente em `README.md` ou `REJECTED.md` — se o link já existir em `REJECTED.md`, avise o usuário em vez de readicionar automaticamente.
-- Para o fluxo guiado passo a passo, existe a skill `curate-resource` (`.claude/skills/curate-resource/SKILL.md`).
+1. If the category isn't specified in that same message, **ask** which category it should go into before doing anything else.
+2. **Research the resource** (repo README, description, examples) to understand what it does.
+3. **Add the entry** to the specified section in `README.md`, following `templates/entry.md`, with the `🧪 pending test` label. Insert alphabetically within the section. Remove the `_No entries yet._` placeholder if it's the first entry in that section.
+4. **Commit and push automatically** to a PR for approval (see "Git workflow" below) — do not wait for the user to ask.
+
+When the user says a resource was **tested and approved**:
+- Swap the `🧪 pending test` label for `✅ approved` on the matching entry in `README.md`.
+- Optionally enrich the description with a real-usage note.
+- Commit and push automatically to a PR for approval.
+
+When the user says a resource was **rejected**:
+- Remove the entry from `README.md`.
+- Add it to `REJECTED.md` following the template, with today's date and the rejection reason (ask for the reason if the user didn't give one).
+- Commit and push automatically to a PR for approval.
+
+## Git workflow
+
+- Every change (add/approve/reject/new category/etc.) is committed and pushed automatically to a PR for approval — never leave changes uncommitted waiting for the user to ask.
+- If there's already an open PR for the current work, push additional commits to that same branch instead of opening a new PR.
+- Keep PR descriptions minimal, e.g.:
+  - "Added `<repo>` to `<Category>`"
+  - "Approved `<repo>`"
+  - "Rejected `<repo>`"
+  If a PR bundles more than one highlight, use bullet points instead of prose.
+
+## General conventions
+
+- Alphabetical order within each section.
+- Objective, short descriptions (1–2 sentences), no marketing tone.
+- Never duplicate a resource already present in `README.md` or `REJECTED.md` — if the link already exists in `REJECTED.md`, tell the user instead of automatically re-adding it.
+- For the guided step-by-step flow, use the `curate-resource` skill (`.claude/skills/curate-resource/SKILL.md`).

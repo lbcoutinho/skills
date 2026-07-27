@@ -1,14 +1,14 @@
-# ❌ Recursos Rejeitados
+# ❌ Rejected Resources
 
-Recursos que já foram avaliados e **não** valem a pena usar. Mantidos aqui (em vez de simplesmente apagados) para não gastar tempo reavaliando o mesmo repo de novo no futuro.
+Resources that were already evaluated and are **not** worth using. Kept here (instead of just deleted) to avoid wasting time re-evaluating the same repo again in the future.
 
-Formato de cada entrada: nome/link, data da rejeição e motivo.
+Format of each entry: name/link, rejection date and reason.
 
 ---
 
-<!-- Exemplo:
-- **[Nome do Recurso](https://github.com/owner/repo)** — rejeitado em 2026-07-26
-  Motivo: não mantido há 2 anos, funcionalidade sobreposta por [outro recurso](link).
+<!-- Example:
+- **[Resource Name](https://github.com/owner/repo)** — rejected on 2026-07-26
+  Reason: not maintained for 2 years, functionality superseded by [another resource](link).
 -->
 
-_Nenhuma entrada ainda._
+_No entries yet._
