@@ -19,53 +19,11 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 ---
 
-## Skills
+## Table of Contents
 
-<!-- Reusable skills for Claude Code / agents (SKILL.md, packaged prompts, etc.) -->
+- [Tokens Saving](#tokens-saving)
 
-_No entries yet._
-
-## Agents / Subagents
-
-<!-- Subagent definitions, specialized agents, agent packs -->
-
-_No entries yet._
-
-## Frameworks & SDKs
-
-<!-- Multi-agent orchestration frameworks, SDKs for building agents -->
-
-_No entries yet._
-
-## MCP Servers & Integrations
-
-<!-- MCP servers, connectors, integrations with external tools -->
-
-_No entries yet._
-
-## Tools & CLIs
-
-<!-- CLIs, productivity utilities, generators, linters specific to agent workflows -->
-
-_No entries yet._
-
-## Observability & Monitoring
-
-<!-- Usage/cost dashboards, session monitors, logging -->
-
-_No entries yet._
-
-## Security
-
-<!-- Security review tools, sandboxing, permissions -->
-
-_No entries yet._
-
-## Documentation & Learning
-
-<!-- Articles, guides, prompt collections, cheatsheets -->
-
-_No entries yet._
+---
 
 ## Tokens Saving
 
