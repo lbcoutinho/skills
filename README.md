@@ -52,6 +52,8 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
   A skill compiling React performance and development best practices into agent-readable guidance, covering areas from avoiding request waterfalls to advanced patterns.
 - **[react-view-transitions](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-view-transitions)** by [vercel-labs](https://github.com/vercel-labs) — 🧪 `pending test`
   A skill with components, patterns, and CSS recipes for implementing the View Transition API in React/Next.js apps, covering page transitions and shared-element animations.
+- **[refero_skill](https://github.com/referodesign/refero_skill)** by [referodesign](https://github.com/referodesign) — 🧪 `pending test`
+  A skill that requires design research (real app screens and user flows from products like Stripe, Linear, and Notion) before implementation, producing a pattern reference and craft guidance (typography, spacing, motion) instead of freehand UI generation.
 - **[web-design-guidelines](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines)** by [vercel-labs](https://github.com/vercel-labs) — 🧪 `pending test`
   A skill that fetches the latest Web Interface Guidelines from GitHub and audits given UI code against them for accessibility, design, and UX issues.
 
