@@ -2,8 +2,6 @@
 
 Personal curated list — skills, agents, frameworks, MCP servers and tools — useful for software development work with AI agents (Claude Code and similar).
 
-Inspired by [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code).
-
 ## How it works
 
 Each resource listed below has a status label:
@@ -28,11 +26,13 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 - [Documentation](#documentation)
 - [Infra](#infra)
 - [LLM Tone](#llm-tone)
+- [MCP](#mcp)
 - [Memory & Context](#memory--context)
 - [Security](#security)
 - [Skills](#skills)
 - [Tokens Saving](#tokens-saving)
 - [Video](#video)
+- [Workflows](#workflows)
 
 ---
 
@@ -51,8 +51,6 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 - **[code-simplifier](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
   An official plugin/agent that simplifies and refines recently modified code for clarity, consistency, and maintainability while preserving functionality.
-- **[feature-dev](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/feature-dev)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
-  An official plugin providing a feature-development workflow with specialized agents for codebase exploration, architecture design, and quality review.
 
 ---
 
@@ -62,8 +60,6 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 - **[awesome-claude-plugins](https://github.com/rdmgator12/awesome-claude-plugins)** by [rdmgator12](https://github.com/rdmgator12) — 🧪 `pending test`
   A community-maintained, unofficial directory cataloging plugins (skills, MCP servers, slash commands, sub-agents, hooks) from Anthropic's official Claude Plugins catalog.
-- **[gstack](https://github.com/garrytan/gstack)** by [garrytan](https://github.com/garrytan) — 🧪 `pending test`
-  A collection of opinionated Claude Code tools structured as role-based agents (designer, QA, release engineer, security officer, etc.) implementing a Think→Plan→Build→Review→Test→Ship workflow.
 
 ---
 
@@ -73,16 +69,10 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 ### MCP
 
-- **[chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** by [ChromeDevTools](https://github.com/ChromeDevTools) — 🧪 `pending test`
-  An MCP server that lets AI coding agents control and inspect a live Chrome instance via Puppeteer, for automation, debugging, performance tracing, network inspection, and screenshots.
 - **[Magic MCP](https://github.com/21st-dev/magic-mcp)** by [21st-dev](https://github.com/21st-dev) — 🧪 `pending test`
   An MCP server for searching a library of React/Tailwind components and generating UI from natural-language prompts inside editors like Cursor and Claude Code.
 - **[shadcn-ui-mcp-server](https://github.com/Jpisnice/shadcn-ui-mcp-server)** by [Jpisnice](https://github.com/Jpisnice) — 🧪 `pending test`
   An MCP server that gives AI coding assistants structured access to shadcn/ui component source and demos across React, Svelte, Vue, and React Native.
-- **[Playwright](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/playwright)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
-  An official plugin wrapping Microsoft's Playwright MCP server for browser automation and end-to-end testing: navigating pages, filling forms, clicking elements, taking screenshots, and running automated browser tests.
-- **[Supabase](https://github.com/supabase-community/supabase-plugin)** by [supabase-community](https://github.com/supabase-community) — 🧪 `pending test`
-  An MCP integration plugin for Supabase covering database operations, authentication, storage, and real-time subscriptions, letting agents run SQL and manage Supabase projects directly.
 
 ### Skills
 
@@ -142,6 +132,19 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 ---
 
+## MCP
+
+<!-- MCP servers not specific to another category -->
+
+- **[chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** by [ChromeDevTools](https://github.com/ChromeDevTools) — 🧪 `pending test`
+  An MCP server that lets AI coding agents control and inspect a live Chrome instance via Puppeteer, for automation, debugging, performance tracing, network inspection, and screenshots.
+- **[Playwright](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/playwright)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
+  An official plugin wrapping Microsoft's Playwright MCP server for browser automation and end-to-end testing: navigating pages, filling forms, clicking elements, taking screenshots, and running automated browser tests.
+- **[Supabase](https://github.com/supabase-community/supabase-plugin)** by [supabase-community](https://github.com/supabase-community) — 🧪 `pending test`
+  An MCP integration plugin for Supabase covering database operations, authentication, storage, and real-time subscriptions, letting agents run SQL and manage Supabase projects directly.
+
+---
+
 ## Memory & Context
 
 <!-- Tools/techniques focused on giving agents persistent memory or structured context -->
@@ -176,10 +179,6 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
   An official plugin implementing the "Ralph Wiggum" technique: an interactive loop where Claude repeatedly works on the same task, seeing its own prior output, until completion.
 - **[skill-creator](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
   An official plugin/skill for creating new skills, improving existing ones, running evals, and benchmarking skill performance.
-- **[Skills](https://github.com/mattpocock/skills)** by [mattpocock](https://github.com/mattpocock) — 🧪 `pending test`
-  A collection of reusable AI agent skills addressing common failure modes in AI-assisted development, including alignment checks, test-driven development, code review, and domain modeling.
-- **[Superpowers](https://github.com/obra/superpowers)** by [obra](https://github.com/obra) — 🧪 `pending test`
-  A composable skills framework that gives coding agents a structured software development methodology, covering design refinement, test-driven development, and subagent-based implementation workflows.
 
 ---
 
@@ -204,3 +203,18 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 - **[HyperFrames](https://github.com/heygen-com/hyperframes)** by [heygen-com](https://github.com/heygen-com) — 🧪 `pending test`
   An open-source framework that renders HTML/CSS/animation compositions into deterministic MP4 video, designed for agent-authored video generation without a build step.
+
+---
+
+## Workflows
+
+<!-- End-to-end development workflows and methodologies for agents -->
+
+- **[feature-dev](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/feature-dev)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
+  An official plugin providing a feature-development workflow with specialized agents for codebase exploration, architecture design, and quality review.
+- **[gstack](https://github.com/garrytan/gstack)** by [garrytan](https://github.com/garrytan) — 🧪 `pending test`
+  A collection of opinionated Claude Code tools structured as role-based agents (designer, QA, release engineer, security officer, etc.) implementing a Think→Plan→Build→Review→Test→Ship workflow.
+- **[Skills](https://github.com/mattpocock/skills)** by [mattpocock](https://github.com/mattpocock) — 🧪 `pending test`
+  A collection of reusable AI agent skills addressing common failure modes in AI-assisted development, including alignment checks, test-driven development, code review, and domain modeling.
+- **[Superpowers](https://github.com/obra/superpowers)** by [obra](https://github.com/obra) — 🧪 `pending test`
+  A composable skills framework that gives coding agents a structured software development methodology, covering design refinement, test-driven development, and subagent-based implementation workflows.
