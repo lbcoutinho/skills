@@ -138,6 +138,8 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 - **[chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** by [ChromeDevTools](https://github.com/ChromeDevTools) — 🧪 `pending test`
   An MCP server that lets AI coding agents control and inspect a live Chrome instance via Puppeteer, for automation, debugging, performance tracing, network inspection, and screenshots.
+- **[Context7](https://github.com/upstash/context7)** by [upstash](https://github.com/upstash) — 🧪 `pending test`
+  An MCP server that fetches up-to-date, version-specific documentation and code examples straight from source, injecting them into the prompt to avoid outdated or hallucinated API usage.
 - **[Playwright](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/playwright)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
   An official plugin wrapping Microsoft's Playwright MCP server for browser automation and end-to-end testing: navigating pages, filling forms, clicking elements, taking screenshots, and running automated browser tests.
 - **[Supabase](https://github.com/supabase-community/supabase-plugin)** by [supabase-community](https://github.com/supabase-community) — 🧪 `pending test`
