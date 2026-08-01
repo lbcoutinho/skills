@@ -80,13 +80,13 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
   A skill (part of taste-skill) that generates brand-identity visual systems: logo concepts, color systems, typography, and mockup presentation boards.
 - **[composition-patterns](https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns)** by [vercel-labs](https://github.com/vercel-labs) — 🧪 `pending test`
   A skill documenting React composition patterns for component architecture and state management, aimed at replacing boolean-prop-heavy components with more maintainable, composable ones.
-- **[frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
+- **[frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design)** by [anthropics](https://github.com/anthropics) — ✅ `approved`
   A Claude skill with guidance for producing visually distinctive web interfaces, grounding typography/color/layout choices in the subject matter instead of generic templates.
 - **[gsap-skills](https://github.com/greensock/gsap-skills)** by [greensock](https://github.com/greensock) — 🧪 `pending test`
   Official GSAP skills teaching agents how to correctly use the GSAP animation API, timelines, ScrollTrigger, plugins, and framework integrations (React/Vue/Svelte).
 - **[image-to-code-skill](https://github.com/Leonxlnx/taste-skill/tree/main/skills/image-to-code-skill)** by [Leonxlnx](https://github.com/Leonxlnx) — 🧪 `pending test`
   A skill (part of taste-skill) that generates reference website-design images, analyzes their layout/typography/spacing, then implements frontend code matching those designs.
-- **[impeccable](https://github.com/pbakaus/impeccable)** by [pbakaus](https://github.com/pbakaus) — 🧪 `pending test`
+- **[impeccable](https://github.com/pbakaus/impeccable)** by [pbakaus](https://github.com/pbakaus) — ✅ `approved`
   A design-language framework with commands and detector rules aimed at preventing common AI-generated design anti-patterns (overused fonts, gradient clichés), with a setup flow and live browser iteration.
 - **[react-best-practices](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices)** by [vercel-labs](https://github.com/vercel-labs) — 🧪 `pending test`
   A skill compiling React performance and development best practices into agent-readable guidance, covering areas from avoiding request waterfalls to advanced patterns.
@@ -188,11 +188,11 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 <!-- Tools/techniques focused on reducing token usage/cost in agent workflows -->
 
-- **[caveman](https://github.com/JuliusBrussee/caveman)** by [JuliusBrussee](https://github.com/JuliusBrussee) — 🧪 `pending test`
+- **[caveman](https://github.com/JuliusBrussee/caveman)** by [JuliusBrussee](https://github.com/JuliusBrussee) — ✅ `approved`
   A skill/plugin for Claude Code, Gemini, Cursor and 30+ other agents that compresses agent output into terse fragments, cutting output tokens by roughly 65% without losing technical accuracy.
 - **[headroom](https://github.com/headroomlabs-ai/headroom)** by [headroomlabs-ai](https://github.com/headroomlabs-ai) — 🧪 `pending test`
   A content-aware compression tool for tool outputs, logs, files, and RAG chunks, usable as a local proxy, library, or MCP server, claiming 60-95% fewer tokens for JSON data and 15-20% for coding agents.
-- **[ponytail](https://github.com/DietrichGebert/ponytail)** by [DietrichGebert](https://github.com/DietrichGebert) — 🧪 `pending test`
+- **[ponytail](https://github.com/DietrichGebert/ponytail)** by [DietrichGebert](https://github.com/DietrichGebert) — ✅ `approved`
   An agent plugin that enforces minimal-code practices via a decision ladder (reuse, standard libraries, native features) before writing new code, reporting ~54% less code and ~20% lower cost in benchmarks.
 - **[rtk](https://github.com/rtk-ai/rtk)** by [rtk-ai](https://github.com/rtk-ai) — ✅ `approved`
   A single-binary Rust CLI proxy that filters and compresses verbose shell command output (git, cargo, test runners, etc.) before it reaches an AI agent's context, cutting token usage by 60-90%. Supports 15+ AI coding platforms including Claude Code, GitHub Copilot, and Cursor.
