@@ -28,6 +28,7 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 - [LLM Tone](#llm-tone)
 - [MCP](#mcp)
 - [Memory & Context](#memory--context)
+- [Research](#research)
 - [Security](#security)
 - [Skills](#skills)
 - [Tokens Saving](#tokens-saving)
@@ -58,6 +59,10 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 <!-- Directories/lists of other Claude Code plugins, skills and tools -->
 
+- **[awesome-claude-plugins](https://github.com/quemsah/awesome-claude-plugins)** by [quemsah](https://github.com/quemsah) — 🧪 `pending test`
+  An auto-updated ranking (generated via n8n workflows) of the top 100 GitHub repositories offering Claude Code plugins, sorted by stars, subscribers, and plugin count.
+- **[awesome-claude-plugins](https://github.com/composio-community/awesome-claude-plugins)** by [composio-community](https://github.com/composio-community) — 🧪 `pending test`
+  A curated list of production-ready Claude Code plugins (custom commands, agents, hooks, MCP servers), maintained by Composio and including their own MCP Gateway connect-apps plugin.
 - **[awesome-claude-plugins](https://github.com/rdmgator12/awesome-claude-plugins)** by [rdmgator12](https://github.com/rdmgator12) — 🧪 `pending test`
   A community-maintained, unofficial directory cataloging plugins (skills, MCP servers, slash commands, sub-agents, hooks) from Anthropic's official Claude Plugins catalog.
 
@@ -157,6 +162,15 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
   A local, pre-indexed code knowledge graph that gives coding agents symbol/call/dependency context in a single query instead of repeated grep/file reads, reporting a 60% cost reduction and 89% fewer tool calls in benchmarks.
 - **[Graphify](https://github.com/Graphify-Labs/graphify)** by [Graphify-Labs](https://github.com/Graphify-Labs) — 🧪 `pending test`
   Builds a queryable knowledge graph of a codebase (plus docs, PDFs, configs) via local AST parsing instead of vector embeddings, letting agents query project structure instead of grepping through files.
+
+---
+
+## Research
+
+<!-- Tools/skills for agent-driven research and information gathering -->
+
+- **[last30days-skill](https://github.com/mvanhorn/last30days-skill)** by [mvanhorn](https://github.com/mvanhorn) — 🧪 `pending test`
+  An agent skill that researches a topic across Reddit, X, YouTube, Hacker News, Polymarket, and the web, then synthesizes a grounded summary.
 
 ---
 
