@@ -1,3 +1,42 @@
+# 🔌 Install the plugin
+
+This repository packages the skills in [`skills/`](./skills/) as the `skills` plugin.
+
+<details>
+<summary>Claude Code</summary>
+
+```sh
+claude plugin marketplace add lbcoutinho/skills
+claude plugin install skills@lbcoutinho
+```
+
+To update automatically, run `/plugin`, open **Marketplaces**, select `lbcoutinho`, and choose **Enable auto-update**. Claude Code checks for updates at startup; run `/reload-plugins` when prompted.
+</details>
+
+<details>
+<summary>Codex</summary>
+
+```sh
+codex plugin marketplace add lbcoutinho/skills
+codex plugin add skills@lbcoutinho
+```
+
+To update, run:
+
+```sh
+codex plugin marketplace upgrade lbcoutinho
+codex plugin add skills@lbcoutinho
+```
+
+Codex does not currently update marketplaces automatically. Schedule these commands locally if you want periodic updates.
+</details>
+<br/>
+
+For a local checkout, replace `lbcoutinho/skills` with the repository path.
+
+
+<br/>
+
 # 🧰 Skills, Agents & Tools for AI-Assisted Dev
 
 Personal curated list — skills, agents, frameworks, MCP servers and tools — useful for software development work with AI agents (Claude Code and similar).
@@ -41,7 +80,7 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 <!-- Guides/resources to read and evaluate before categorizing further -->
 
-- **[claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)** by [shanraisshan](https://github.com/shanraisshan) — 🧪 `pending test`
+- **[claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)** by [shanraisshan](https://github.com/shanraisshan) — ✅ `approved`
   A guide documenting Claude Code's feature set (subagents, commands, skills, hooks, MCP, plugins) and workflow patterns, plus curated links to other skill/agent libraries.
 
 ---
@@ -114,7 +153,7 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 <!-- Tools/skills for managing project documentation and memory files -->
 
-- **[claude-md-management](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
+- **[claude-md-management](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management)** by [anthropics](https://github.com/anthropics) — ✅ `approved`
   An official plugin with tools to audit CLAUDE.md quality, capture session learnings, and keep project memory files current.
 
 ---
@@ -141,11 +180,11 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 <!-- MCP servers not specific to another category -->
 
-- **[chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** by [ChromeDevTools](https://github.com/ChromeDevTools) — 🧪 `pending test`
+- **[chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** by [ChromeDevTools](https://github.com/ChromeDevTools) — ✅ `approved`
   An MCP server that lets AI coding agents control and inspect a live Chrome instance via Puppeteer, for automation, debugging, performance tracing, network inspection, and screenshots.
 - **[Context7](https://github.com/upstash/context7)** by [upstash](https://github.com/upstash) — 🧪 `pending test`
   An MCP server that fetches up-to-date, version-specific documentation and code examples straight from source, injecting them into the prompt to avoid outdated or hallucinated API usage.
-- **[Playwright](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/playwright)** by [anthropics](https://github.com/anthropics) — 🧪 `pending test`
+- **[Playwright](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/playwright)** by [anthropics](https://github.com/anthropics) — ✅ `approved`
   An official plugin wrapping Microsoft's Playwright MCP server for browser automation and end-to-end testing: navigating pages, filling forms, clicking elements, taking screenshots, and running automated browser tests.
 - **[Supabase](https://github.com/supabase-community/supabase-plugin)** by [supabase-community](https://github.com/supabase-community) — 🧪 `pending test`
   An MCP integration plugin for Supabase covering database operations, authentication, storage, and real-time subscriptions, letting agents run SQL and manage Supabase projects directly.
@@ -156,9 +195,9 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 <!-- Tools/techniques focused on giving agents persistent memory or structured context -->
 
-- **[claude-mem](https://github.com/thedotmack/claude-mem)** by [thedotmack](https://github.com/thedotmack) — 🧪 `pending test`
+- **[claude-mem](https://github.com/thedotmack/claude-mem)** by [thedotmack](https://github.com/thedotmack) — ✅ `approved`
   A persistent memory system that captures session activity, compresses it with AI, and re-injects relevant context into future sessions, giving agents continuity of knowledge across disconnected sessions.
-- **[CodeGraph](https://github.com/colbymchenry/codegraph)** by [colbymchenry](https://github.com/colbymchenry) — 🧪 `pending test`
+- **[CodeGraph](https://github.com/colbymchenry/codegraph)** by [colbymchenry](https://github.com/colbymchenry) — ✅ `approved`
   A local, pre-indexed code knowledge graph that gives coding agents symbol/call/dependency context in a single query instead of repeated grep/file reads, reporting a 60% cost reduction and 89% fewer tool calls in benchmarks.
 - **[Graphify](https://github.com/Graphify-Labs/graphify)** by [Graphify-Labs](https://github.com/Graphify-Labs) — 🧪 `pending test`
   Builds a queryable knowledge graph of a codebase (plus docs, PDFs, configs) via local AST parsing instead of vector embeddings, letting agents query project structure instead of grepping through files.
@@ -204,7 +243,7 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
 
 - **[caveman](https://github.com/JuliusBrussee/caveman)** by [JuliusBrussee](https://github.com/JuliusBrussee) — ✅ `approved`
   A skill/plugin for Claude Code, Gemini, Cursor and 30+ other agents that compresses agent output into terse fragments, cutting output tokens by roughly 65% without losing technical accuracy.
-- **[headroom](https://github.com/headroomlabs-ai/headroom)** by [headroomlabs-ai](https://github.com/headroomlabs-ai) — 🧪 `pending test`
+- **[headroom](https://github.com/headroomlabs-ai/headroom)** by [headroomlabs-ai](https://github.com/headroomlabs-ai) — ✅ `approved`
   A content-aware compression tool for tool outputs, logs, files, and RAG chunks, usable as a local proxy, library, or MCP server, claiming 60-95% fewer tokens for JSON data and 15-20% for coding agents.
 - **[ponytail](https://github.com/DietrichGebert/ponytail)** by [DietrichGebert](https://github.com/DietrichGebert) — ✅ `approved`
   An agent plugin that enforces minimal-code practices via a decision ladder (reuse, standard libraries, native features) before writing new code, reporting ~54% less code and ~20% lower cost in benchmarks.
@@ -230,7 +269,7 @@ See [`CLAUDE.md`](./CLAUDE.md) for the workflow on how entries are added/promote
   An official plugin providing a feature-development workflow with specialized agents for codebase exploration, architecture design, and quality review.
 - **[gstack](https://github.com/garrytan/gstack)** by [garrytan](https://github.com/garrytan) — 🧪 `pending test`
   A collection of opinionated Claude Code tools structured as role-based agents (designer, QA, release engineer, security officer, etc.) implementing a Think→Plan→Build→Review→Test→Ship workflow.
-- **[Skills](https://github.com/mattpocock/skills)** by [mattpocock](https://github.com/mattpocock) — 🧪 `pending test`
+- **[Skills](https://github.com/mattpocock/skills)** by [mattpocock](https://github.com/mattpocock) — ✅ `approved``
   A collection of reusable AI agent skills addressing common failure modes in AI-assisted development, including alignment checks, test-driven development, code review, and domain modeling.
-- **[Superpowers](https://github.com/obra/superpowers)** by [obra](https://github.com/obra) — 🧪 `pending test`
+- **[Superpowers](https://github.com/obra/superpowers)** by [obra](https://github.com/obra) — ✅ `approved`
   A composable skills framework that gives coding agents a structured software development methodology, covering design refinement, test-driven development, and subagent-based implementation workflows.

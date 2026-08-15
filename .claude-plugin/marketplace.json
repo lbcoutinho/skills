@@ -1,0 +1,14 @@
+{
+  "name": "lbcoutinho",
+  "owner": {
+    "name": "Leandro Coutinho"
+  },
+  "description": "Reusable workflow skills for AI coding agents",
+  "plugins": [
+    {
+      "name": "skills",
+      "source": "./",
+      "description": "Reusable workflow skills for AI coding agents"
+    }
+  ]
+}

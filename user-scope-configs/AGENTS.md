@@ -1,12 +1,12 @@
 ## Plan and docs
 
-- Plans are written directly into the GitHub issue body with `## Implementation Plan`, `## Acceptance Criteria`, `## Tests`, never to a local plan file — this overrides `superpowers:writing-plans`'s default of saving to `docs/superpowers/plans/`
+- Plans are written directly into the GitHub issue body with `## Implementation Plan`, `## Acceptance Criteria`, `## Tests`, never to a local plan file
 - When decision deviates from ticket's original plan, add comment to Issue explaining deviation.
 
 ## Ticket workflow (follow for every task)
 
 - Don't create issues in Github without explicit ask.
-- Never work on the main worktree, unless explicitly asked. Always create new worktree when starting any work.
+- Never work on the main worktree. Always create new worktree when starting any work.
 - Branch-per-implementation — Commit + push to feature branch, open pull request to `main`.
 - Always use skill `create-issue` to open issue for one ticket at a time. If not available then stop and ask.
 - Always use skill `create-commit` for commits. If not available then stop and ask.
@@ -28,6 +28,6 @@
 - Never merge PRs — user reviews and merges.
 - English (en-US) everywhere — code, comments, commit messages, etc.
 
-## Codex Block - Start
+<!-- CODEX_START -->
 @/home/leandro/.codex/RTK.md
-## Codex Block - End
+<!-- CODEX_END -->
